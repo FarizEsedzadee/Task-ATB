@@ -540,12 +540,13 @@
                             <p class="flex items-center justify-between text-[24px]">nağd əməliyyatlar</p>
                         </div>
                     </div>
-                    <div class="bottom flex items-center w-full">
-                        <div class="flex">
+                    <div class="bottom w-full flex flex-col md:flex-row items-center gap-4">
+                        <!-- Sol Alan -->
+                        <div class="flex w-full md:w-auto">
                             <input type="text" value="1" id="left-input" oninput="calcPrice()"
-                                class="w-[50%] outline-none border-none focus:outline-none ring-0 rounded-l-xl">
-                            <select class="outline-none border-none rounded-r-xl focus:outline-none ring-0"
-                                id="from-currency" oninput="calcPrice()">
+                                class="w-1/2 md:w-[100px] rounded-l-xl p-3 outline-none border border-gray-300 focus:ring-2 focus:ring-purple-500">
+                            <select id="from-currency" oninput="calcPrice()"
+                                class="w-1/2 md:w-[100px] rounded-r-xl p-3 outline-none border border-l-0 border-gray-300 focus:ring-2 focus:ring-purple-500">
                                 <option value="azn">AZN</option>
                                 <option value="usd">USD</option>
                                 <option value="eur">EUR</option>
@@ -562,12 +563,19 @@
                                 <option value="try">TRY</option>
                             </select>
                         </div>
-                        <i class="fa-solid fa-arrow-right-long me-[30px] text-[24px] text-[#6F0BBB]"></i>
-                        <div class="flex">
+
+                        <!-- Ok -->
+                        <div class="bg-gray-100 p-4">
+                            <span class="text-2xl text-purple-700 block md:hidden">↓</span>
+                            <span class="text-2xl text-purple-700 hidden md:block">→</span>
+                        </div>
+
+                        <!-- Sağ Alan -->
+                        <div class="flex w-full md:w-auto">
                             <input type="text" value="-" id="right-input" oninput="calcPrice()"
-                                class="w-[50%] outline-none border-none focus:outline-none ring-0 rounded-l-xl">
-                            <select class="outline-none border-none rounded-r-xl focus:outline-none ring-0"
-                                id="to-currency" oninput="calcPrice()">
+                                class="w-1/2 md:w-[100px] rounded-l-xl p-3 outline-none border border-gray-300 focus:ring-2 focus:ring-purple-500">
+                            <select id="to-currency" oninput="calcPrice()"
+                                class="w-1/2 md:w-[100px] rounded-r-xl p-3 outline-none border border-l-0 border-gray-300 focus:ring-2 focus:ring-purple-500">
                                 <option value="azn">AZN</option>
                                 <option value="usd">USD</option>
                                 <option value="eur">EUR</option>
@@ -585,6 +593,7 @@
                             </select>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
