@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.atb360 {
+  background: linear-gradient(87.61deg, #6f0bbb -5.3%, #be9bd8 158.9%);
+}
+
+/* ======================================================================== >> DROPDOWN << =========================================================================== */
+
+#dropdownDelay::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 16px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  z-index: 20;
+}
+
+/* ======================================================================== >> CARD SECTION << =========================================================================== */
+#cards-section {
+  .card {
+    background: linear-gradient(180deg, #f0f5fb 0%, #f8f0fe 100%);
+  }
+}
+#calc-section {
+  .active {
+    background-color: #6f0bbb;
+    color: #fff;
+  }
+}
+
+/* ======================================================================== >> RANGE INPUT << =========================================================================== */
+
+.range-slider {
+  --thumb-size: 13px;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: var(--thumb-size);
+  width: var(--thumb-size);
+  background: #6f0bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  margin-top: -6px;
+}
+
+.range-slider::-webkit-slider-runnable-track {
+  height: 3px;
+  background: linear-gradient(to right, #6f0bbb 0%, #6f0bbb 0%, transparent 0%, transparent 100%);
+  border-radius: 3px;
+  position: relative;
+}
+
+.range-slider:focus {
+  outline: none;
+}
+
+.range-slider::-moz-range-thumb {
+  height: var(--thumb-size);
+  width: var(--thumb-size);
+  background: #6f0bbb;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-slider::-moz-range-track {
+  height: 3px;
+  background: linear-gradient(to right, #6f0bbb 0%, transparent 100%);
+  border-radius: 3px;
+}
+
+/* ======================================================================== >> DROPDOWN & SELECT << =========================================================================== */
+
+
+.scale-y-100 {
+  transform: scaleY(1);
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+.custom-select {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+}
+
+.select-selected {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 99;
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.custom-select.open .select-items {
+  display: block;
+}
+
+.select-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select-item:hover {
+  background-color: #f0f0f0;
+}
+
+.select-flag {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+}
+
+.banner-item.right {
+  background-image: linear-gradient(90deg, #000000 0%, #88888888 50%);
+}
+
+
+/* ======================================================================== >> NEWS SECTION << =========================================================================== */
+
+#news-section li::before {
+  content: "";
+  position: absolute;
+  width: 57px;
+  height: 20px;
+  bottom: -20px;
+  left: -28px;
+  border-style: solid;
+  clip-path: polygon(50% 100%, 50% 0, 100% 0);
+  background-color: #F5EEE8;
+}
+
+/* ======================================================================== >> RESPONSIVE DESIGN << =========================================================================== */
+
+@media (max-width: 768px) {
+  .calcTypeContainer {
+    gap: 12px;
+    align-items: start;
+    justify-content: start;
+
+
+    .calcType {
+      border-radius: 20px;
+      padding: 14px 17px;
+      font-size: 14px;
+      min-width: auto;
+      max-width: 265px;
+      white-space: nowrap;
+      line-height: 1.2;
+      border-radius: 10px;
+      transition: ease-in-out .3s;
+    }
+  }
+}

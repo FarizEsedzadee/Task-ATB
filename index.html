@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atb | Azər Türk Bank - Sizin Dövlət</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="mainHeader" class="py-[16px] fixed w-full top-0 left-0 z-[100] lg:bg-transparent lg:!absolute">
+        <div class="xl:container !max-w-[1170px] mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center justify-start rtl:justify-end xl:hidden">
+                <button data-drawer-target="logo-sidebar" data-drawer-backdrop="false" data-drawer-toggle="logo-sidebar"
+                    aria-controls="logo-sidebar" type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100">
+                    <span class="sr-only">Open sidebar</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" fill-rule="evenodd"
+                            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <aside id="logo-sidebar"
+                class="fixed top-0 left-0 z-[2] w-full h-screen pt-20 transition-transform -translate-x-full bg-white md:translate-x-0 xl:hidden px-3 duration-700"
+                aria-label="Sidebar">
+                <div class="h-full pb-4 overflow-y-auto bg-white">
+                    <ul class="grid grid-cols-3 gap-[15px] p-[20px]">
+                        <li
+                            class="p-[10px] rounded-lg border border-[#6f0bbb] bg-[#6f0bbb] text-white font-semi text-center">
+                            fərdi</li>
+                        <li class="p-[10px] rounded-lg border border-[#6f0bbb] text-[#6f0bbb] font-semi text-center">
+                            biznes</li>
+                        <li class="p-[10px] rounded-lg border border-[#6f0bbb] text-[#6f0bbb] font-semi text-center">kob
+                        </li>
+                    </ul>
+
+                    <div class="accordion-div px-[20px]">
+                    </div>
+
+                    <ul class="space-y-2 border-b border-[#C8C8C8] p-[20px] sidebarList">
+                        <span class="text-[18px] leading-[1.1] py-[9px] font-semibold text-[#6f0bbb]">daha
+                            ətraflı</span>
+                    </ul>
+                    <ul class="space-y-2 border-b border-[#C8C8C8] p-[20px] sidebarList2">
+                        <span class="text-[18px] leading-[1.1] py-[9px] font-semibold text-[#6f0bbb]">info</span>
+                    </ul>
+
+                    <ul
+                        class="space-y-2 border-b border-[#C8C8C8] p-[20px] socialMedia flex items-center justify-center gap-4 mb-[40px]">
+                        <li><a href="#"><img class="w-[35px] h-[35px]"
+                                    src="https://atb.az/wp-content/uploads/2023/01/facebook.svg" alt="fb"></a></li>
+                        <li><a href="#"><img class="w-[35px] h-[35px]"
+                                    src="https://atb.az/wp-content/uploads/2023/01/instagram.svg" alt="insta"></a></li>
+                        <li><a href="#"><img class="w-[35px] h-[35px]"
+                                    src="https://atb.az/wp-content/uploads/2023/01/linkedin.svg" alt="linkedin"></a>
+                        </li>
+                        <li><a href="#"><img class="w-[35px] h-[35px]"
+                                    src="https://atb.az/wp-content/uploads/2023/11/whatsapp_icon.png" alt="wp"></a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Logo --> <!-- Header Start -->
+            <div class="ms-5 lg:flex items-center gap-[30px]">
+                <img class="w-[70px] h-[45px]" src="./assets/images/logo.svg" alt="Atb Logo">
+                <div class="text-[14px] hidden lg:flex flex-col gap-[10px]">
+                    <ul class="flex gap-[15px]">
+                        <li class="hover:text-[#6f0bbb] text-[#6f0bbb] text-[14px] font-bold"><a href="#">FƏRDİ</a></li>
+                        <li class="hover:text-[#6f0bbb]"><a href="#">BİZNES</a></li>
+                        <li class="hover:text-[#6f0bbb]"><a href="#">KOB</a></li>
+                    </ul>
+                    <ul class="navbarList flex gap-[18px]">
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Header End Mobile-->
+            <div class="flex items-center gap-[20px] lg:hidden">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <ul class="lang-list flex items-center gap-[10px]">
+                    <li class="lang-item p-[3px_5px] rounded-lg border border-[#6f0bbb] text-[#6f0bbb] font-semibold">ru
+                    </li>
+                    <li class="lang-item p-[3px_5px] rounded-lg border border-[#6f0bbb] text-[#6f0bbb] font-semibold">en
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Header End Dekstop -->
+            <div class="hidden lg:flex items-center gap-[20px] lg:ms-[70px] xl:ms-0">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button
+                    class="atb360 text-[14px] min-w-[80px] font-[700] leading-[1.2] rounded-[7px] p-[8px_10px_10px] text-white">atb360</button>
+
+                <!-- LANG -->
+                <ul class="lang-list flex items-center gap-[10px]">
+                    <li class="lang-item p-[5px_7px] rounded-lg border border-[#6f0bbb] text-[#6f0bbb]">AZ
+                    </li>
+                </ul>
+
+                <!-- Dropdown -->
+                <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500"
+                    data-dropdown-trigger="hover"
+                    class="font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center cursor-pointer hover:text-[#6f0bbb]"
+                    type="button"> BANK HAQQINDA
+                    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg>
+                </button>
+
+                <!-- Dropdown Menu - Üçbucaq düzəldiləcək -->
+                <!--                 <div
+                    class="relative inline-block before:content-[''] before:absolute before:top-[-8px] before:right-[16px] before:border-[8px] before:border-transparent before:border-b-white before:z-20">
+                </div> -->
+
+                <div id="dropdownDelay" class="absolute hidden bg-white border rounded-lg shadow-sm w-[300px] p-[40px]">
+                    <ul class="headerDropdownMenu py-2 text-[12px]">
+                    </ul>
+                </div>
+
+
+                <!-- Phone -->
+                <a href="telto:+994551234567" class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="text-[18px] font-bold">945</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-section">
+            <div class="swiper pb-[30px]">
+                <div id="heroSwiper" class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        <div
+                            class="container !max-w-[1170px] pt-[120px] px-[44px] mx-auto hidden flex-col items-start gap-[30px] md:flex">
+                            <h2 class="text-[40px] font-[800]">istehlak kreditləri</h2>
+                            <a target="_blank" href="https://atb.az/kredit/"
+                                class="p-[12px_10px_14px] bg-[#6f0bbb] text-[18px] text-white leading-[1.2] rounded-[10px] min-w-[175px] text-center">sifariş</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <div
+                            class="container !max-w-[1170px] pt-[120px] px-[44px] mx-auto hidden flex-col items-start gap-[30px] md:flex">
+                            <div>
+                                <h2 class="text-[40px] font-[800]">kart qalığına</h2>
+                                <h2 class="text-[40px]">8% gəlir</h2>
+                            </div>
+                            <a target="_blank" href="https://atb.az/8-gelir-kampaniyasi-davam-edir/"
+                                class="p-[12px_10px_14px] bg-[#6f0bbb] text-[18px] text-white leading-[1.2] rounded-[10px] min-w-[175px] text-center">ətraflı</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-3">
+                        <div
+                            class="container !max-w-[1170px] pt-[120px] px-[44px] mx-auto hidden flex-col items-start gap-[30px] md:flex">
+                            <div>
+                                <h2 class="text-[40px] font-[800]">rəqəmsal</h2>
+                                <h2 class="text-[40px]">atb kartın sifarişi</h2>
+                            </div>
+                            <a target="_blank" href="https://atb.az/360/"
+                                class="p-[12px_10px_14px] bg-[#6f0bbb] text-[18px] text-white leading-[1.2] rounded-[10px] min-w-[175px] text-center">ətraflı</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-4">
+                        <div
+                            class="container !max-w-[1170px] pt-[120px] px-[44px] mx-auto hidden flex-col items-start gap-[30px] md:flex">
+                            <div>
+                                <h2 class="text-[40px] font-[800] max-w-[560px]">SİMA İmza <br> atb360-da!</h2>
+                                <h2 class="text-[20px] max-w-[560px]">yeni atb card sifarişində sənədləri rəqəmsal
+                                    olaraq <br> imzalayın
+                                </h2>
+                            </div>
+                            <div class="flex gap-3">
+                                <a target="_blank" href="https://atb.az/atb-sima/"
+                                    class="p-[12px_10px_14px] bg-[#6f0bbb] text-[18px] text-white leading-[1.2] rounded-[10px] min-w-[175px] text-center">ətraflı</a>
+                                <a target="_blank" href="https://atb.az/360/"
+                                    class="p-[12px_10px_14px] bg-[#6f0bbb] text-[18px] text-white leading-[1.2] rounded-[10px] min-w-[175px] text-center">sifariş</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination flex justify-center gap-[10px] bottom-[-5px]"></div>
+            </div>
+        </section>
+
+        <!-- Card Section (js doldurur) -->
+        <section id="cards-section">
+            <div class="max-w-[1170px] mx-auto px-4 pt-[60px]">
+                <ul class="cards grid grid-cols-2 lg:grid-cols-4 gap-2 md:!gap-5">
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- Cals Section -->
+        <section id="calc-section">
+            <div class="container !max-w-[1170px] mx-auto px-4 pt-[60px]">
+                <ul class="flex items-center justify-center pb-[30px] calcTypeContainer">
+                    <li id="cash-loan" onclick="changeCalc(event)"
+                        class="calcType flex items-center gap-4  cursor-pointer bg-[#F3F3F3] transition-all duration-300 py-[20px] px-[25px] rounded-l-2xl min-w-[265px] active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 60 40"
+                            class="w-[60px] h-[40px] hidden md:block" fill="none">
+                            <path d="M51 9H1V39H51V9Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 4V1H59V31H56" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M33.125 23.9687C33.125 28.3906 30.1758 31.9756 26.5391 31.9756C22.9014 31.9756 19.9521 28.3906 19.9521 23.9687C19.9521 19.5459 22.9014 15.9619 26.5391 15.9619C30.1758 15.9619 33.125 19.5459 33.125 23.9687Z"
+                                stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span class="hidden md:block text-sm leading-tight">
+                            nağd krediti <br />
+                            hesabla
+                        </span>
+                        <span class="md:hidden">nağd kredit</span>
+                    </li>
+
+                    <li id="deposit" onclick="changeCalc(event)"
+                        class="calcType flex items-center gap-4  cursor-pointer bg-[#F3F3F3] transition-all duration-300 p-[20px_25px] rounded-r-2xl min-w-[265px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="40" viewBox="0 0 42 36"
+                            class="w-[60px] h-[40px] hidden md:block" fill="none">
+                            <path d="M9.6954 31.0757V34.5537H6.21747V31.0757" stroke="currentColor" stroke-width="1.3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M35.7825 31.0757V34.5537H32.3046V31.0757" stroke="currentColor" stroke-width="1.3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M38.3337 1.48047C39.7992 1.48047 41 2.66516 41 4.11316V27.812C41 29.2613 39.7992 30.446 38.3337 30.446H3.66634C2.20083 30.446 1 29.2613 1 27.812V4.11316C1 2.66516 2.20083 1.48047 3.66634 1.48047H38.3337Z"
+                                stroke="currentColor" stroke-width="1.3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M35.4827 15.9632C35.4827 19.7712 32.3941 22.8598 28.5876 22.8598C24.7776 22.8598 21.6896 19.7712 21.6896 15.9632C21.6896 12.154 24.7776 9.06668 28.5876 9.06668C32.3941 9.06668 35.4827 12.154 35.4827 15.9632Z"
+                                stroke="currentColor" stroke-width="1.3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M7.20695 11.1356H5.82764V12.5149H7.20695V11.1356Z" fill="currentColor" />
+                            <path d="M11.3448 11.1356H9.96545V12.5149H11.3448V11.1356Z" fill="currentColor" />
+                            <path d="M15.4828 11.1356H14.1035V12.5149H15.4828V11.1356Z" fill="currentColor" />
+                            <path d="M7.20695 15.2737H5.82764V16.653H7.20695V15.2737Z" fill="currentColor" />
+                            <path d="M11.3448 15.2737H9.96545V16.653H11.3448V15.2737Z" fill="currentColor" />
+                            <path d="M15.4828 15.2737H14.1035V16.653H15.4828V15.2737Z" fill="currentColor" />
+                            <path d="M7.20695 19.4116H5.82764V20.7909H7.20695V19.4116Z" fill="currentColor" />
+                            <path d="M11.3448 19.4116H9.96545V20.7909H11.3448V19.4116Z" fill="currentColor" />
+                            <path d="M15.4828 19.4116H14.1035V20.7909H15.4828V19.4116Z" fill="currentColor" />
+                            <path d="M33.4637 11.0878L28.5876 15.9632" stroke="currentColor" stroke-width="1.3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="hidden md:block text-sm leading-tight">
+                            əmanət üzrə gəliri <br />
+                            hesabla
+                        </span>
+                        <span class="md:hidden">əmanət üzrə gəliri hesabla</span>
+                    </li>
+                </ul>
+
+
+                <!-- Cash Loan Section -->
+                <section id="cash-loan-section" class="px-4 sm:px-6 lg:px-16">
+                    <h2 class="text-[28px] sm:text-[32px] font-bold text-center sm:text-left">
+                        nağd krediti hesabla
+                    </h2>
+
+                    <div class="flex flex-col lg:flex-row gap-8 pt-[30px] pb-[60px]">
+                        <!-- nağd krediti hesabla -->
+                        <div class="flex flex-col gap-6 bg-gray-100 p-5 sm:p-[30px] w-full lg:w-[65%] rounded-[15px]">
+                            <div class="input1-wrapper mb-5">
+                                <div
+                                    class="bg-white border w-full rounded-[10px] border-[#6f0bbb5c] p-[10px_16px] col-span-2 relative">
+                                    <label class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                                        <span class="text-[14px] text-[#818181]">hansı məbləğ arzunuzu
+                                            reallaşdırar?</span>
+                                        <div>
+                                            <input
+                                                class="text-right border-none outline-none focus:outline-none focus:border-none focus:ring-0 focus:shadow-none font-bold px-0 w-[100px]"
+                                                type="text" value="15000" size="6" id="cashInput" />
+                                            <span class="font-bold">AZN</span>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input type="range" min="300" max="40000" value="5000"
+                                            class="cashRange amountRange absolute bottom-0 range-xs range-slider w-[95%] rounded-[3px] h-[2px] appearance-none bg-transparent"
+                                            id="amountRange" oninput="updateRangeBackground(slider, event)" />
+                                </div>
+                                <div class="flex items-center justify-between relative">
+                                    <span
+                                        class="text-[12px] text-[#8F8F8F] absolute bottom-[-25px] left-[20px]">300</span>
+                                    <span class="text-[12px] text-[#8F8F8F] absolute bottom-[-25px] right-[20px]">40
+                                        000</span>
+                                </div>
+                                </label>
+                            </div>
+
+                            <!-- müddət -->
+                            <div class="input2-wrapper">
+                                <div
+                                    class="bg-white border w-full rounded-[10px] border-[#6f0bbb5c] p-[10px_16px] col-span-2 relative">
+                                    <label class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                                        <span class="text-[14px] text-[#818181]">müddəti seçin</span>
+                                        <div>
+                                            <input
+                                                class="text-right border-none outline-none focus:outline-none focus:border-none focus:ring-0 focus:shadow-none font-bold px-0 w-[60px]"
+                                                type="text" value="12" size="6" id="monthInput">
+                                            <span class="font-bold">ay</span>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input type="range" min="3" max="48" value="12"
+                                            class="monthRange amountRange absolute bottom-0 range-xs range-slider w-[95%] rounded-[3px] h-[2px] appearance-none bg-transparent"
+                                            id="amountRange2" oninput="updateRangeBackground(slider2, event)" />
+                                </div>
+                                <div class="flex items-center justify-between relative">
+                                    <span class="text-[12px] text-[#8F8F8F] absolute bottom-[-25px] left-[20px]">3
+                                        ay</span>
+                                    <span class="text-[12px] text-[#8F8F8F] absolute bottom-[-25px] right-[20px]">48
+                                        ay</span>
+                                </div>
+                                </label>
+                            </div>
+
+                            <label class="inline-flex items-start sm:items-center mt-[24px] gap-2 text-[12px]">
+                                <input type="checkbox"
+                                    class="mt-1 accent-purple-600 outline-none border-[#C8C8C8] rounded-sm w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]">
+                                <span>
+                                    "sifariş" düyməsini basaraq
+                                    <a target="_blank" href="https://atb.az/ru/tehlukesizliyiniz/"
+                                        class="underline">müraciət qaydaları</a>
+                                    ilə razılaşmış olursunuz
+                                </span>
+                            </label>
+                        </div>
+
+                        <!-- bizim təklif -->
+                        <div
+                            class="bg-white rounded-2xl p-6 border border-black flex flex-col justify-between w-full lg:w-[35%]">
+                            <div>
+                                <h3 class="text-[20px] sm:text-[24px] font-semibold mb-[20px] sm:mb-[35px]">
+                                    bizim <br class="hidden sm:block"> təklif
+                                </h3>
+                                <div class="flex flex-col sm:flex-row gap-6 sm:gap-8">
+                                    <div>
+                                        <p class="text-[14px] text-[#8F8F8F]">faiz dərəcəsi</p>
+                                        <p class="text-[28px] sm:text-[35px] font-bold monthlyPercent">11%</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-[14px] text-[#8F8F8F]">aylıq ödəniş</p>
+                                        <p class="text-[28px] sm:text-[35px] font-bold monthlyPayment">27 ₼</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="mt-6 w-full bg-purple-600 text-white p-[12px_10px_14px] rounded-lg cursor-pointer">
+                                sifariş
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Deposit Section -->
+            <section id="deposit-section" class="hidden">
+                <div class="max-w-[1170px] mx-auto px-4 pb-[60px]">
+                    <h2 class="text-[32px] font-bold pb-[30px]">əmanət üzrə gəliri hesablayın</h2>
+                    <div class="flex flex-col gap-6 bg-gray-100 p-[30px] w-full rounded-[15px]">
+                        <!-- hansı məbləğ -->
+                        <div class="top flex flex-col md:flex-row gap:-4 md:gap-6">
+                            <div id="dropdown-container"
+                                class="left w-full md:grid grid-cols-2 items-center md:gap-6 md:w-[70%]">
+                                <!-- Dropdown 1 -->
+                                <div class="relative inline-block w-full mb-[12px] md:mb-0">
+                                    <button
+                                        class="dropdownToggle flex justify-between items-center w-full p-4 border border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:border-gray-500 bg-white transition-all">
+                                        <span class="selectedCurrency">Valyuta</span>
+                                        <svg class="arrowIcon w-4 h-4 transition-transform duration-300"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </button>
+                                    <ul
+                                        class="dropdownMenu absolute left-0 top-full w-full bg-white border-none rounded-lg mt-1 shadow transition-all duration-300 ease-in-out scale-y-0 opacity-0 origin-top pointer-events-none z-10">
+                                        <li class="p-3 cursor-pointer hover:bg-gray-100">AZN</li>
+                                        <li class="p-3 cursor-pointer hover:bg-gray-100">USD</li>
+                                    </ul>
+                                </div>
+                                <!-- Dropdown 2 -->
+                                <div class="relative inline-block w-full mb-[12px] md:mb-0">
+                                    <button
+                                        class="dropdownToggle flex justify-between items-center w-full p-4 border border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:border-gray-500 bg-white transition-all">
+                                        <span class="selectedCurrency">faizlərin ödənilməsi</span>
+                                        <svg class="arrowIcon w-4 h-4 transition-transform duration-300"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </button>
+                                    <ul
+                                        class="dropdownMenu absolute left-0 top-full w-full bg-white border border-none rounded-lg mt-1 shadow transition-all duration-300 ease-in-out scale-y-0 opacity-0 origin-top pointer-events-none z-10">
+                                        <li class="p-3 cursor-pointer hover:bg-gray-100">müddətin sonunda</li>
+                                        <li class="p-3 cursor-pointer hover:bg-gray-100">aylıq ödəniş</li>
+                                    </ul>
+                                </div>
+                                <!-- Dropdown 3 -->
+                                <div class="relative inline-block w-full mb-[12px] md:mb-0">
+                                    <button
+                                        class="dropdownToggle flex justify-between items-center w-full p-4 border border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:border-gray-500 bg-white transition-all">
+                                        <span class="selectedCurrency">müddət</span>
+                                        <svg class="arrowIcon w-4 h-4 transition-transform duration-300"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </button>
+                                    <ul
+                                        class="dropdownMenu absolute left-0 top-full w-full bg-white border-none rounded-lg mt-1 shadow transition-all duration-300 ease-in-out scale-y-0 opacity-0 origin-top pointer-events-none z-10">
+                                        <li class="p-3 cursor-pointer hover:bg-gray-100">12</li>
+                                        <li class="p-3 cursor-pointer hover:bg-gray-100">24</li>
+                                        <li class="p-3 cursor-pointer hover:bg-gray-100">36</li>
+                                    </ul>
+                                </div>
+
+                                <input type="text" placeholder="məbləğ (min. 1000 AZN/USD)*"
+                                    class="p-[18px_15px] rounded-lg outline-none border-gray-300 ring-0 focus:border-gray-500 w-full mb-[12px] md:mb-0">
+                            </div>
+                            <div
+                                class="right flex w-full items-center justify-center border border-[#6f0bbb] w-[30%] py-[15px] px-[30px] rounded-lg">
+                                <span class="p-[30px] text-[20px] text-[#6f0bbb] leading-[23px]">
+                                    faizlər - aylıq
+                                    <br>
+                                    0% - 0.00 AZN
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom flex items-center justify-center">
+                            <button
+                                class="bg-[#6F0BBB] text-white text-[18px] p-[12px_10px_14px] rounded-lg w-[175px]">sifariş
+                                et</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Currency Section -->
+        <section id="currency-section">
+            <div class="max-w-[1170px] mx-auto flex flex-col md:grid grid-cols-2 px-4 gap-4 md:gap-8 mb-[60px]">
+                <!-- Mobile Section Header -->
+                <div class="mobile-section-header top md:hidden">
+                    <h2 class="text-[32px] mb-[6px] leading-[1.2] font-bold">valyuta məzənnəsi</h2>
+                    <p class="flex items-center justify-between text-[12px] text-[#8F8F8F]">
+                        <span>yeniləndi 08:07, 18.07.2025</span>
+                        <span class="font-bold text-[13px] cursor-pointer">
+                            <a target="_blank" href="https://atb.az/cash-exchange-rate/">ətraflı</a>
+                        </span>
+                    </p>
+                </div>
+                <!-- Desktop Section Header -->
+                <div class="left p-[34px_34px_46px] bg-[#EFF3EEE8] rounded-[15px]">
+                    <div class="top hidden md:block mb-[28px]">
+                        <h2 class="text-[24px] mb-[6px] leading-[1.2] font-bold">valyuta məzənnəsi</h2>
+                        <p class="flex items-center justify-between text-[14px] text-[#8F8F8F]">
+                            <span>yeniləndi 08:07, 18.07.2025</span>
+                            <span class="font-bold cursor-pointer"><a target="_blank"
+                                    href="https://atb.az/cash-exchange-rate/">ətraflı</a></span>
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="text-[14px] text-[#6F0BBB] font-[400] pb-[10px]">
+                                    <th rowspan="1"></th>
+                                    <th rowspan="1"></th>
+                                    <th rowspan="1">nağdsız alış</th>
+                                    <th rowspan="1">nağdsız satış</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-[20px]">
+                                    <td class="flag p-[7.5px_5px_7.5px_0]">
+                                        <img src="https://atb.az/wp-content/uploads/2023/01/US.svg">
+                                    </td>
+                                    <td class="currency p-[7.5px_5px_7.5px_0] font-[700]">USD</td>
+                                    <td class="rate p-[7.5px_5px_7.5px_0] border-r border-[#d0d0d0] text-center">
+                                        <span>1.6990</span>
+                                    </td>
+                                    <td class="rate p-[7.5px_5px_7.5px_0] text-center"><span>1.7025</span></td>
+                                </tr>
+                                <tr class="text-[20px]">
+                                    <td class="flag p-[7.5px_5px_7.5px_0]">
+                                        <img src="https://atb.az/wp-content/uploads/2023/01/EU.svg">
+                                    </td>
+                                    <td class="currency p-[7.5px_5px_7.5px_0] font-[700]">EUR</td>
+                                    <td class="rate p-[7.5px_5px_7.5px_0] border-r border-[#d0d0d0] text-center">
+                                        <span>1.955</span>
+                                    </td>
+                                    <td class="rate p-[7.5px_5px_7.5px_0] text-center"><span>1.996</span></td>
+                                </tr>
+                                <tr class="text-[20px]">
+                                    <td class="flag p-[7.5px_5px_7.5px_0]">
+                                        <img src="https://atb.az/wp-content/uploads/2023/09/frame-32.svg">
+                                    </td>
+                                    <td class="currency p-[7.5px_5px_7.5px_0] font-[700]">GBP</td>
+                                    <td class="rate p-[7.5px_5px_7.5px_0] border-r border-[#d0d0d0] text-center">
+                                        <span>2.273</span>
+                                    </td>
+                                    <td class="rate p-[7.5px_5px_7.5px_0] text-center"><span>2.300</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div
+                    class="right p-[34px_34px_46px] bg-[#EFF3EEE8] rounded-[15px] flex flex-col items-start gap-8 h-[75%]">
+                    <div class="top flex items-center gap-5">
+                        <div class="left">
+                            <img src="./assets/images/azn-money.png" alt="AZN">
+                        </div>
+                        <div class="right">
+                            <h2 class="text-[24px] mb-[6px] leading-[1.2] font-bold">valyuta kalkulyatoru
+                            </h2>
+                            <p class="flex items-center justify-between text-[24px]">nağd əməliyyatlar</p>
+                        </div>
+                    </div>
+                    <div class="bottom flex items-center w-full">
+                        <div class="flex">
+                            <input type="text" value="1" id="left-input" oninput="calcPrice()"
+                                class="w-[50%] outline-none border-none focus:outline-none ring-0 rounded-l-xl">
+                            <select class="outline-none border-none rounded-r-xl focus:outline-none ring-0"
+                                id="from-currency" oninput="calcPrice()">
+                                <option value="azn">AZN</option>
+                                <option value="usd">USD</option>
+                                <option value="eur">EUR</option>
+                                <option value="gbp">GBP</option>
+                                <option value="aud">AUD</option>
+                                <option value="byn">BYN</option>
+                                <option value="bgn">BGN</option>
+                                <option value="aed">AED</option>
+                                <option value="czk">CZK</option>
+                                <option value="cny">CNY</option>
+                                <option value="dkk">DKK</option>
+                                <option value="rub">RUB</option>
+                                <option value="chf">CHF</option>
+                                <option value="try">TRY</option>
+                            </select>
+                        </div>
+                        <i class="fa-solid fa-arrow-right-long me-[30px] text-[24px] text-[#6F0BBB]"></i>
+                        <div class="flex">
+                            <input type="text" value="-" id="right-input" oninput="calcPrice()"
+                                class="w-[50%] outline-none border-none focus:outline-none ring-0 rounded-l-xl">
+                            <select class="outline-none border-none rounded-r-xl focus:outline-none ring-0"
+                                id="to-currency" oninput="calcPrice()">
+                                <option value="azn">AZN</option>
+                                <option value="usd">USD</option>
+                                <option value="eur">EUR</option>
+                                <option value="gbp">GBP</option>
+                                <option value="aud">AUD</option>
+                                <option value="byn">BYN</option>
+                                <option value="bgn">BGN</option>
+                                <option value="aed">AED</option>
+                                <option value="czk">CZK</option>
+                                <option value="cny">CNY</option>
+                                <option value="dkk">DKK</option>
+                                <option value="rub">RUB</option>
+                                <option value="chf">CHF</option>
+                                <option value="try">TRY</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credit Card Section -->
+        <section id="credit-card-section" class="hidden md:block">
+            <div class="max-w-[1170px] px-4 mx-auto grid grid-cols-2 gap-8 pb-[60px]">
+                <div
+                    class="banner-item left bg-[#4B99D217] p-[15px_34px] min-h-[20px flex items-center justify-between rounded-[15px] overflow-hidden">
+                    <div>
+                        <h2 class="text-[24px] font-bold">ən sərfəli <br> kartımız</h2>
+                        <button
+                            class="min-w-[175px] leading-[1.2]  bg-[#F4C900] text-[#6F0BBB] text-[18px] p-[12px_10px_14px] mt-[48px]
+                        transition-colors transition-background duration-400 ease-in-out rounded-[10px] cursor-pointer">ətraflı
+                        </button>
+                    </div>
+                    <div>
+                        <img src="./assets/images/atbcard-visa.png" alt="atbcard">
+                    </div>
+                </div>
+                <div
+                    class="banner-item right bg-[#4B99D217] p-[15px_34px] min-h-[20px flex items-center justify-between rounded-[15px] overflow-hidden">
+                    <div>
+                        <h2 class="text-[24px] font-bold text-white">atb premium <br> kartı</h2>
+                        <button
+                            class="min-w-[175px] leading-[1.2]  bg-black text-white text-[18px] p-[12px_10px_14px] mt-[48px]
+                        transition-colors transition-background duration-400 ease-in-out rounded-[10px] cursor-pointer">sifariş
+                        </button>
+                    </div>
+                    <div>
+                        <img src="./assets/images/atbcard-premium.png" alt="atbcardpre">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news-section">
+            <div class="max-w-[1170px] px-4 mx-auto pb-[60px]">
+                <h2 class="text-[32px] font-bold pb-[30px]">bankımızın xəbərləri</h2>
+                <ul class="news-container flex justify-around">
+                </ul>
+                <span class="md:hidden text-[14px] font-300 text-right inline-block w-full mt-[10px]">bütün xəbərləri
+                    oxu</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top py-[50px] bg-[rgba(148,114,173,.08)]">
+            <div class="max-w-[1170px] px-4 mx-auto flex flex-col md:flex-row items-start justify-between">
+                <div class="left">
+                    <div class="top">
+                        <ul class="hidden md:flex items-center text-[12px] md:gap-6 mb-[24px]">
+                            <li class="font-[500]"><a target="_blank" href="https://atb.az/news/">xəbərlər</a></li>
+                            <li class="font-[500]"><a target="_blank" href="https://atb.az/career/">karyera mərkəzi</a>
+                            </li>
+                            <li class="font-[500]"><a target="_blank" href="https://atb.az/bank/">bank məlumatları</a>
+                            </li>
+                            <li class="font-[500]"><a target="_blank"
+                                    href="https://atb.az/tehlukesizliyiniz/">təhlükəsizliyiniz</a></li>
+                        </ul>
+                        <div class="flex md:items-center text-[13px] flex-col md:flex-row">
+                            <ul
+                                class="md:pe-[32px] md:border-r border-[#C8C8C8] flex flex-col gap-[14px] items-start justify-center font-[300]">
+                                <li><a target="_blank" href="https://atb.az/kredit/">istehlak krediti</a></li>
+                                <li><a target="_blank" href="https://atb.az/kredit-kart/">atb card kredit</a></li>
+                                <li><a target="_blank" href="https://atb.az/360/">atb-360</a></li>
+                            </ul>
+                            <ul
+                                class="md:px-[32px] md:border-r border-[#C8C8C8] flex flex-col gap-[14px] items-start justify-center font-[300]">
+                                <li><a target="_blank" href="https://atb.az/atb-kart/">atb card</a></li>
+                                <li><a target="_blank" href="https://atb.az/premium/">atb card premium</a></li>
+                                <li><a target="_blank" href="https://atb.az/junior/">atb card junior</a></li>
+                            </ul>
+                            <ul class="md:ps-[32px] flex flex-col gap-[14px] items-start justify-center font-[300]">
+                                <li><a target="_blank" href="https://pay.atb.az/pay-loan/enter-details">kredit
+                                        ödənişi</a></li>
+                                <li><a target="_blank" href="https://atb.az/safe/">depozit qutu</a></li>
+                                <li><a target="_blank" href="https://atb.az/tarif/">tariflər</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom"></div>
+                </div>
+                <div class="right flex flex-col md:flex-row gap-8">
+                    <ul class="social py-[15px] flex gap-3">
+                        <li class="social-item w-[25px] h-[25px]"><a href="#"><img
+                                    src="https://atb.az/wp-content/uploads/2023/01/facebook.svg"></a></li>
+                        <li class="social-item w-[25px] h-[25px]"><a href="#"><img
+                                    src="https://atb.az/wp-content/uploads/2023/01/instagram.svg"></a></li>
+                        <li class="social-item w-[25px] h-[25px]"><a href="#"><img
+                                    src="https://atb.az/wp-content/uploads/2023/01/linkedin.svg"></a></li>
+                        <li class="social-item w-[25px] h-[25px]"><a href="#"><img
+                                    src="https://atb.az/wp-content/uploads/2023/11/whatsapp_icon.png"></a></li>
+                        <li class="social-item w-[25px] h-[25px]"><a href="#"><img
+                                    src="https://atb.az/wp-content/uploads/2025/05/atb_signature_icons_tiktok.png"></a>
+                        </li>
+                    </ul>
+                    <img class="w-[85px] h-[55px]" src="./assets/images/logo.svg">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom pt-[38px] pb-[45px] bg-[#ede9f2]">
+            <div class="max-w-[1170px] px-4 mx-auto flex flex-col items-start gap-8">
+                <div class="top flex flex-col md:flex-row gap-12">
+                    <ul class="text-[12px] font-[300]">
+                        <li><a target="_blank" href="#">Bakı, C. Məmmədquluzadə küç. 85; 192/193</a></li>
+                        <li><a target="_blank" href="tel:945">tel: 945</a></li>
+                        <li><a target="_blank" href="https://chat.whatsapp.com/IIqblaBG5ElBebjF83xoVW">WhatsApp: +994 55
+                                7770 945</a></li>
+                        <li><a target="_blank" href="mailto:atb@atb.az">Email: atb@atb.az</a></li>
+                    </ul>
+                    <ul class="flex flex-wrap gap-[12px] max-w-[330px]">
+                        <li><a target="_blank" href="https://adif.gov.az/"><img
+                                    src="https://atb.az/wp-content/uploads/2023/01/adif-loqo.png"></a></li>
+                        <li><a target="_blank" href="https://infobank.az/"><img
+                                    src="https://atb.az/wp-content/uploads/2023/01/infobank-logo.png"></a></li>
+                        <li><a target="_blank" href="https://www.cbar.az/%20%20"><img
+                                    src="https://atb.az/wp-content/uploads/2023/08/img_61e08b78d48b27-82316265-42154419.png"></a>
+                        </li>
+                        <li><a target="_blank" href="https://aih.gov.az/"><img
+                                    src="https://atb.az/wp-content/uploads/2023/07/aih_logo-1.png"></a></li>
+                    </ul>
+                </div>
+                <div class="bottom text-[12px] font-[300]">
+                    <p>© 2002 – 2025 AzərTürkBank.</p>
+                    <p>Bütün hüquqlar qorunur.</p>
+                    <p>Azərbaycan Respublikası Mərkəzi Bankının 29 iyun 1995-ci il tarixli 234 nömrəli bank
+                        əməliyyatlarının həyata keçirilməsi üzrə lisenziyasına əsasən</p>
+                    <p>Saytın məzmununun təkrar istifadəsi qadağandır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 z-50">
+        <button id="toggleMenu"
+            class="bg-purple-600 hover:bg-purple-700 text-white p-3 rounded-full shadow-lg focus:outline-none transition cursor-pointer">
+            <i class="fa-solid fa-comment-dots text-[30px] w-[40px] h-[40px] !flex items-center justify-center"></i>
+        </button>
+
+        <div id="socialMenu" class="mt-2 hidden flex flex-col items-center gap-2">
+            <a href="https://wa.me/0000000000" target="_blank"
+                class="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition">
+                <i class="fa-brands fa-whatsapp text-[30px] w-[40px] h-[40px] !flex items-center justify-center"></i>
+            </a>
+
+            <a href="https://m.me/yourpage" target="_blank"
+                class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition">
+                <i
+                    class="fa-brands fa-facebook-messenger text-[30px] w-[40px] h-[40px] !flex items-center justify-center"></i>
+            </a>
+
+            <button onclick="closeMenu()"
+                class="bg-gray-100 hover:bg-gray-200 text-gray-600 p-3 rounded-full shadow-md transition cursor-pointer">
+                <i class="fa-solid fa-xmark text-[30px] w-[40px] h-[40px] !flex items-center justify-center"></i>
+            </button>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+</body>
+
+</html>
